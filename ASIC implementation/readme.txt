@@ -1,3 +1,5 @@
+Report link : https://docs.google.com/document/d/1rOAeHgji_GgqxMRRKXCHq6IKWShLU0k5_ss_2HrwvVs/edit?usp=sharing
+
 TCL_files:
     - optmize_delay.tcl
     - optimize_area_slow.tcl
