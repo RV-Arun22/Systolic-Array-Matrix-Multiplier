@@ -6,7 +6,7 @@ It is a pretty basic design:
     - SA_control.v - Responsible for providing inputs to the systolic array in a timely fashion to perform correct matrix multiplication. This logic
                      is hardcoded for the 8 x 8 SA.
                      Contains:
-                      - ROM (.meme file) - Used to store the 128 8-bit elements of the two input matrices.
+                      - ROM (.mem file) - Used to store the 128 8-bit elements of the two input matrices.
                       - Multiplexers - 8 for per-row element selection and 8 for per-column element selection to feed the SA.
                       - Counter - A basic counter whose outputs act as select lines to the multiplexers; dictates which element goes into the SA at what clock cycle.
     - Accelerator.v - The accelerator top module containing the above 3 modules instantiated in it.
