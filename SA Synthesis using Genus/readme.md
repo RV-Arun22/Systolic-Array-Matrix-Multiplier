@@ -5,7 +5,7 @@ TCL_files:
     - optmize_delay.tcl
     - optimize_area_slow.tcl
     - optimize_area_typical.tcl
-    - optimize_area_fast.tcl
+    - optimize_area_fast.tcl 
     - optimize_power.tcl
 
 constraint_files:
