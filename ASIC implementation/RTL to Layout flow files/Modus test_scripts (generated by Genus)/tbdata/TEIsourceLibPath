@@ -1,0 +1,3 @@
+SOURCE=/projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/accelerator.test_netlist.v
+TECHLIB=/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v
+RUNDIR=/projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/

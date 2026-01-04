@@ -1,0 +1,154 @@
+Starting Command: build_model 
+
+INFO (TDA-005): Command Line Invocation: 
+            build_model -cell accelerator -designtop accelerator -allowmissingmodules no -workdir /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts -designsource /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/accelerator.test_netlist.v -stdout summary -techlib /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v  [end TDA_005]
+
+INFO (TDA-014): Cadence(R) Modus(TM) DFT Software Solution, Version 20.12-s002_1, built Feb 26 2021 (linux26_64) [end TDA_014]
+
+INFO (TDA-015): Log File: /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/testresults/logs/log_build_model_112925112149-987833000 [end TDA_015]
+
+INFO (TDA-007): Job Information:
+            Date Started: Saturday Nov 29 11:21:50 2025  IST
+            Host machine is lenovo-51.pilani.bits-pilani.ac.in, x86_64 running Linux 3.10.0-1160.119.1.el7.x86_64.
+            This job is process number 69487.
+[end TDA_007]
+
+INFO (TDA-009): Options/Values information.
+            (options marked with '*' have program generated values,
+             options marked with '+' were specified to default.)
+
+            -WORKDIR /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts
+
+            -designtop accelerator
+            -TECHLIB /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v
+            -LOGFILE /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/testresults/logs/log_build_model_112925112149-987833000
+            -STDOUT summary
+            -DESIGNSOURCE /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/accelerator.test_netlist.v
+          + -allowmissingmodules no
+[end TDA_009]
+INFO (TFW-117): Modus checked out a modus_atpg license.  [end TFW_117] 
+INFO (TEI-195): Build Model - Controller starting: [end TEI_195] 
+
+
+Search Order  1:  "/projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/accelerator.test_netlist.v"
+Search Order  2:  "/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v"
+
+
+
+Reading Verilog data from /projects/2024H1230173P/projects/VTT_SAMM_mk2_RTLtoGDS_with_modus/test_scripts/accelerator.test_netlist.v
+
+Verilog Parser complete - 1 modules, 0 gates, 0 user defined primitives.
+
+
+Reading Verilog data from /linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v
+
+Verilog Parser complete - 480 modules, 1855 gates, 3 user defined primitives.
+
+
+
+INFO (TEI-196): Build Model - Hierarchical Model Build starting: [end TEI_196] 
+
+WARNING (TEI-110): Pin 'NOTIFIER' of 'cell udp_tlat' has no external net connection for any usage in the design. Cell contents file: '/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v'.  [end TEI_110] 
+WARNING (TEI-110): Pin 'NOTIFIER' of 'cell udp_dff' has no external net connection for any usage in the design. Cell contents file: '/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v'.  [end TEI_110] 
+
+
+Number of blocks in the hierarchical model is: 132,787.
+
+Number of technology library cell instances in the hierarchical model is: 16,549.
+
+
+INFO (TEI-197): Build Model - Hierarchical Model Build completed. [end TEI_197] 
+
+
+
+INFO (TEI-198): Build Model - Flat Model Build starting: [end TEI_198] 
+
+ defaultTIE = X
+ defaultDFN = T
+
+
+INFO (TLM-055): Design Summary
+                --------------
+
+Hierarchical Model:                  Flattened Model:
+        132,787  Blocks                      84,706  Blocks
+        418,202  Pins                        84,706  Nodes
+        226,650  Nets
+
+Primary Inputs:                      Primary Outputs:
+         41  Input Only                     1,048  Output Only
+          0  Input/Output                       0  Input/Output
+         41  Total Inputs                   1,048  Total Outputs
+
+Tied Nets:                           Dotted Nets:
+          0  Tied to 0                          0  Two-State
+          0  Tied to 1                          0  Three-State
+          0  Tied to X                          0  Total Dotted Nets
+          0  Total Tied Nets
+
+Selected Primitive Functions:
+          0  Clock Chopper (CHOP) primitives 
+          0  RAMs
+          0  ROMs
+          0  TSDs
+          0  Resistors
+          0  Transistors
+      4,439  MUX2s
+          5  Latches
+
+
+      3,185  Rising  Edge Flop w/Set-Dominant and Reset Port
+      3,185  Total Flops
+
+     16,549  Technology Library Cell Instances
+
+[end TLM_055] 
+Optimization removed logic for 4 of 70 cells in this design.
+
+Optimization removed a total of 12,750 tied Latch Ports.
+Optimization removed a total of 15,935 non-controlling inputs.
+Optimization removed a total of 33,855 dangling logic nodes.
+
+
+
+INFO (TEI-199): Build Model - Flat Model Build completed.  [end TEI_199] 
+
+
+INFO (TDA-001): Maximum Memory used during the run and Cumulative Time in hours:minutes:seconds:
+
+                  Total Memory =          142,666,048  bytes
+
+                      CPU Time =    0:00:01.72
+                  Elapsed Time =    0:00:02.73                    [end TDA_001]
+
+
+
+INFO (TEI-200): Build Model - Controller completed. [end TEI_200] 
+
+INFO (TFW-119): Modus checked in a modus_atpg license.  [end TFW_119] 
+
+
+
+-------------------------------------------------------------------------------
+*                      Message Summary                                        *
+-------------------------------------------------------------------------------
+ Count  Number             First Instance of Message Text
+------- ------             ------------------------------
+
+  INFO Messages...
+      1 INFO (TEI-195): Build Model - Controller starting:  
+      1 INFO (TEI-196): Build Model - Hierarchical Model Build starting:  
+      1 INFO (TEI-197): Build Model - Hierarchical Model Build completed.  
+      1 INFO (TEI-198): Build Model - Flat Model Build starting:  
+      1 INFO (TEI-199): Build Model - Flat Model Build completed.   
+      1 INFO (TEI-200): Build Model - Controller completed.  
+      1 INFO (TFW-117): Modus checked out a modus_atpg license.   
+      1 INFO (TFW-119): Modus checked in a modus_atpg license.   
+      1 INFO (TLM-055): Design Summary
+
+  WARNING Messages...
+      2 WARNING (TEI-110): Pin 'NOTIFIER' of 'cell udp_tlat' has no external net connection for any usage in the design. Cell contents file: '/linuxeda_new/c2scadence/FOUNDRY/digital/90nm/dig/vlog/typical.v'.   
+
+ For a detailed explanation of a message and a suggested user response execute 'msgHelp <message id>'.  For example: msgHelp TDA-009
+
+-------------------------------------------------------------------------------
