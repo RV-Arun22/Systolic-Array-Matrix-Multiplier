@@ -1,9 +1,10 @@
 The flow was implemented using Cadence tools for the updated SAMM (Systolic Array Matrix Multiplier) design. The design is fully synchronous and has no CDCs. The block diagram is shown below.
 
 <img width="1920" height="1080" alt="SAMM block diagram" src="https://github.com/user-attachments/assets/9893c16b-10b9-445f-b1f2-550d54576953" />
-The FIFO buffers are synchronous FIFOs (depth = 8) that outputs zero when read enable is deasserted. 
-(See report)
+The FIFO buffers are synchronous FIFOs (depth = 8) that outputs zero when read enable is deasserted. Haven't implemented write back to the memory yet.
 
+
+(See report also)
 File organisation:
   - Server folders:
     > Contains the project directories for:
