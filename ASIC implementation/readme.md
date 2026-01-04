@@ -17,6 +17,6 @@ File organisation:
       > The memory is part of the top module here.
   
   - RTL to layout flow files:
-      > Contains Genus, Modus and Innovus reports along with design files used in the netlist.
+      > Contains Genus, Modus and Innovus reports/scripts along with design files used in the netlist.
       > Memory module not a part of this (not synthesized).
       > Done using a 90nm technology library.
